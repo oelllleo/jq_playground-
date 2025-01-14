@@ -54,206 +54,184 @@ the parsing procedures:
  echo '"Hello, world!"' | jq '.'
 ```
 
-```
-{
-  "id": 5101141,
-  "node_id": "MDEwOlJlcG9zaXRvcnk1MTAxMTQx",
-  "name": "jq",
-  "full_name": "jqlang/jq",
-  "private": false,
-  "owner": {
-    "login": "jqlang",
-    "id": 104800540,
-    "node_id": "O_kgDOBj8hHA",
-    "avatar_url": "https://avatars.githubusercontent.com/u/104800540?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/jqlang",
-    "html_url": "https://github.com/jqlang",
-    "followers_url": "https://api.github.com/users/jqlang/followers",
-    "following_url": "https://api.github.com/users/jqlang/following{/other_user}",
-    "gists_url": "https://api.github.com/users/jqlang/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/jqlang/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/jqlang/subscriptions",
-    "organizations_url": "https://api.github.com/users/jqlang/orgs",
-    "repos_url": "https://api.github.com/users/jqlang/repos",
-    "events_url": "https://api.github.com/users/jqlang/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/jqlang/received_events",
-    "type": "Organization",
-    "user_view_type": "public",
-    "site_admin": false
-  },
-  "html_url": "https://github.com/jqlang/jq",
-  "description": "Command-line JSON processor",
-  "fork": false,
-  "url": "https://api.github.com/repos/jqlang/jq",
-  "forks_url": "https://api.github.com/repos/jqlang/jq/forks",
-  "keys_url": "https://api.github.com/repos/jqlang/jq/keys{/key_id}",
-  "collaborators_url": "https://api.github.com/repos/jqlang/jq/collaborators{/collaborator}",
-  "teams_url": "https://api.github.com/repos/jqlang/jq/teams",
-  "hooks_url": "https://api.github.com/repos/jqlang/jq/hooks",
-  "issue_events_url": "https://api.github.com/repos/jqlang/jq/issues/events{/number}",
-  "events_url": "https://api.github.com/repos/jqlang/jq/events",
-  "assignees_url": "https://api.github.com/repos/jqlang/jq/assignees{/user}",
-  "branches_url": "https://api.github.com/repos/jqlang/jq/branches{/branch}",
-  "tags_url": "https://api.github.com/repos/jqlang/jq/tags",
-  "blobs_url": "https://api.github.com/repos/jqlang/jq/git/blobs{/sha}",
-  "git_tags_url": "https://api.github.com/repos/jqlang/jq/git/tags{/sha}",
-  "git_refs_url": "https://api.github.com/repos/jqlang/jq/git/refs{/sha}",
-  "trees_url": "https://api.github.com/repos/jqlang/jq/git/trees{/sha}",
-  "statuses_url": "https://api.github.com/repos/jqlang/jq/statuses/{sha}",
-  "languages_url": "https://api.github.com/repos/jqlang/jq/languages",
-  "stargazers_url": "https://api.github.com/repos/jqlang/jq/stargazers",
-  "contributors_url": "https://api.github.com/repos/jqlang/jq/contributors",
-  "subscribers_url": "https://api.github.com/repos/jqlang/jq/subscribers",
-  "subscription_url": "https://api.github.com/repos/jqlang/jq/subscription",
-  "commits_url": "https://api.github.com/repos/jqlang/jq/commits{/sha}",
-  "git_commits_url": "https://api.github.com/repos/jqlang/jq/git/commits{/sha}",
-  "comments_url": "https://api.github.com/repos/jqlang/jq/comments{/number}",
-  "issue_comment_url": "https://api.github.com/repos/jqlang/jq/issues/comments{/number}",
-  "contents_url": "https://api.github.com/repos/jqlang/jq/contents/{+path}",
-  "compare_url": "https://api.github.com/repos/jqlang/jq/compare/{base}...{head}",
-  "merges_url": "https://api.github.com/repos/jqlang/jq/merges",
-  "archive_url": "https://api.github.com/repos/jqlang/jq/{archive_format}{/ref}",
-  "downloads_url": "https://api.github.com/repos/jqlang/jq/downloads",
-  "issues_url": "https://api.github.com/repos/jqlang/jq/issues{/number}",
-  "pulls_url": "https://api.github.com/repos/jqlang/jq/pulls{/number}",
-  "milestones_url": "https://api.github.com/repos/jqlang/jq/milestones{/number}",
-  "notifications_url": "https://api.github.com/repos/jqlang/jq/notifications{?since,all,participating}",
-  "labels_url": "https://api.github.com/repos/jqlang/jq/labels{/name}",
-  "releases_url": "https://api.github.com/repos/jqlang/jq/releases{/id}",
-  "deployments_url": "https://api.github.com/repos/jqlang/jq/deployments",
-  "created_at": "2012-07-18T19:57:25Z",
-  "updated_at": "2025-01-13T11:38:26Z",
-  "pushed_at": "2024-12-29T12:54:12Z",
-  "git_url": "git://github.com/jqlang/jq.git",
-  "ssh_url": "git@github.com:jqlang/jq.git",
-  "clone_url": "https://github.com/jqlang/jq.git",
-  "svn_url": "https://github.com/jqlang/jq",
-  "homepage": "https://jqlang.github.io/jq/",
-  "size": 10177,
-  "stargazers_count": 30943,
-  "watchers_count": 30943,
-  "language": "C",
-  "has_issues": true,
-  "has_projects": false,
-  "has_downloads": true,
-  "has_wiki": true,
-  "has_pages": true,
-  "has_discussions": true,
-  "forks_count": 1592,
-  "mirror_url": null,
-  "archived": false,
-  "disabled": false,
-  "open_issues_count": 460,
-  "license": {
-    "key": "other",
-    "name": "Other",
-    "spdx_id": "NOASSERTION",
-    "url": null,
-    "node_id": "MDc6TGljZW5zZTA="
-  },
-  "allow_forking": true,
-  "is_template": false,
-  "web_commit_signoff_required": false,
-  "topics": [
-    "jq"
-  ],
-  "visibility": "public",
-  "forks": 1592,
-  "open_issues": 460,
-  "watchers": 30943,
-  "default_branch": "master",
-  "temp_clone_token": null,
-  "custom_properties": {
+## Object Identifier-index
 
-  },
-  "organization": {
-    "login": "jqlang",
-    "id": 104800540,
-    "node_id": "O_kgDOBj8hHA",
-    "avatar_url": "https://avatars.githubusercontent.com/u/104800540?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/jqlang",
-    "html_url": "https://github.com/jqlang",
-    "followers_url": "https://api.github.com/users/jqlang/followers",
-    "following_url": "https://api.github.com/users/jqlang/following{/other_user}",
-    "gists_url": "https://api.github.com/users/jqlang/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/jqlang/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/jqlang/subscriptions",
-    "organizations_url": "https://api.github.com/users/jqlang/orgs",
-    "repos_url": "https://api.github.com/users/jqlang/repos",
-    "events_url": "https://api.github.com/users/jqlang/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/jqlang/received_events",
-    "type": "Organization",
-    "user_view_type": "public",
-    "site_admin": false
-  },
-  "network_count": 1592,
-  "subscribers_count": 325
-}
 
 ```
-
-To disply the jq :
-```
-cat example.json | jq '.'
+jq '.key.subkey.subsubley'
 ```
 
-if I want to get the ***value*** on specfic key 
+for example:
 
 ```
-cat example.json | jq '.name'
+echo '{"foo": 42, "bar": "less interesting data"}' | jq '.foo'
 ```
+The above example:
+input: {"foo": 42, "bar": "less interesting data"}
+process: '.foo' = get the 'foo' key value 
+output: 42
 
-it returns 
-```
-"jq"
-```
+A filter of the form .foo.bar is equivalent to .foo | .bar.
 
-If the object is a array or jsonObject 
+can consider the process is a stage pipeline 
 
-Array:
-```
-cat example.json | jq '.topics'
-```
+If the key contains special characters or starts with a digit, you need to surround it with double quotes like this: ."foo$", or else .["foo$"].
 
-it will return an array 
-```
-[
-  "jq"
-]
-```
+## Optional Object Identifier-index
 
-if it is a jsonObject
+Just like .foo, but does not output an error when . is not an object.
 
 ```
-cat example.json | jq '.organization'
-
+echo '{"foo": 42, "bar": "less interesting data"}'| jq '.foo?'
 ```
 
-it will return jsonObject
+The above example 
 
+Input: {"foo": 42, "bar": "less interesting data"}
+process: '.foo?' = foo is an object ?
+output: 42
+
+
+## Object Index: <mark>.[<String>]</mark>
+You can also look up fields of an object using syntax like .["foo"] (.foo above is a shorthand version of this, but only for identifier-like strings).
+
+## Array Index: <mark>.[<number>]</mark>
+When the index value is an integer, .[<number>] can index arrays. Arrays are zero-based, so .[2] returns the third element.
+Negative indices are allowed, with -1 referring to the last element, -2 referring to the next to last element, and so on
+
+### Example 1
 ```
-{
-  "login": "jqlang",
-  "id": 104800540,
-  "node_id": "O_kgDOBj8hHA",
-  "avatar_url": "https://avatars.githubusercontent.com/u/104800540?v=4",
-  "gravatar_id": "",
-  "url": "https://api.github.com/users/jqlang",
-  "html_url": "https://github.com/jqlang",
-  "followers_url": "https://api.github.com/users/jqlang/followers",
-  "following_url": "https://api.github.com/users/jqlang/following{/other_user}",
-  "gists_url": "https://api.github.com/users/jqlang/gists{/gist_id}",
-  "starred_url": "https://api.github.com/users/jqlang/starred{/owner}{/repo}",
-  "subscriptions_url": "https://api.github.com/users/jqlang/subscriptions",
-  "organizations_url": "https://api.github.com/users/jqlang/orgs",
-  "repos_url": "https://api.github.com/users/jqlang/repos",
-  "events_url": "https://api.github.com/users/jqlang/events{/privacy}",
-  "received_events_url": "https://api.github.com/users/jqlang/received_events",
-  "type": "Organization",
-  "user_view_type": "public",
-  "site_admin": false
-}
+  echo '[{"name":"JSON", "good":true}, {"name":"XML", "good":false}]' | jq '.[0]'
 ```
 
+The above example:
+Input : [{"name":"JSON", "good":true}, {"name":"XML", "good":false}]
+Process: 1. get root . 
+         2. get root's object index[0]'s object 
+Output: {"name":"JSON", "good":true}
+
+### Example 2
+```
+  echo '[1,2,3]' | jq '.[-2]'
+```
+The above example:
+Input : [1,2,3]
+Process: 1. get root . 
+         2. get root's object count from last 2 
+Output: 2
+
+## Array/Object Value Iterator: .[] 
+
+If you use the .[index] syntax, but omit the index entirely, it will return all of the elements of an array. Running .[] with the input [1,2,3] will produce the numbers as three separate results, rather than as a single array. A filter of the form .foo[] is equivalent to .foo | .[].
+
+```
+  echo '[{"name":"JSON", "good":true}, {"name":"XML", "good":false}]' | jq '.[]'
+```
+The above example:
+Input : [{"name":"JSON", "good":true}, {"name":"XML", "good":false}]
+Process: 1. get root . 
+         2. get all objects one by one 
+Output: {"name":"JSON", "good":true}
+        {"name":"XML", "good":false}
+
+
+
+## Array/String Slice: .[<number>:<number>] 
+
+The .[<number>:<number>] syntax can be used to return a subarray of an array or substring of a string. The array returned by .[10:15] will be of length 5, containing the elements from index 10 (inclusive) to index 15 (exclusive). Either index may be negative (in which case it counts backwards from the end of the array), or omitted (in which case it refers to the start or end of the array). Indices are zero-based.
+
+### example 1
+```
+  echo '["a","b","c","d","e"]' | jq '.[2:4]'
+```
+
+The above example:
+Input : ["a","b","c","d","e"]
+Process: 1. get root . 
+         2. get root's objects from 2 to 3 （* 4 exclusive）
+Output: ["c","d"]
+
+## Comma, Pipe and Parenthesis
+
+### Comma: <mark>,</mark>
+If two filters are separated by a comma, then the same input will be fed into both and the two filters' output value streams will be concatenated in order: 
+1. first, all of the outputs produced by the left expression,
+2. and then all of the outputs produced by the right. 
+
+For instance, filter ***.foo, .bar***, produces both the "foo" fields and "bar" fields as <mark>separate outputs.</mark>
+
+The , operator is one way to construct generators.
+
+#### Example
+
+```
+echo '{"user":"stedolan", "projects": ["jq", "wikiflow"]}' | jq '.user, .project[]'
+```
+The above example:
+
+Input : 
+
+{"user":"stedolan", "projects": ["jq", "wikiflow"]}
+
+Process: has 1 comma  so there is 2 stream
+
+Stream 1 (.user)
+1. get roots
+2. get roots' user value
+
+Stream 2 (.project[]) 
+
+1. get roots
+2. get roots; project value
+3. get all from it 
+
+Output: 
+
+"stedolan" <- from Stream 1
+"jq" <- from Stream 2
+"wikiflow"
+
+### Pipe: <mark> | </mark>
+The | operator combines two filters by feeding the output(s) of the one on the left into the input of the one on the right. It's similar to the Unix shell's pipe, if you're used to that.
+
+If the one on the left produces multiple results, the one on the right will be run for each of those results. So, the expression .[] | .foo retrieves the "foo" field of each element of the input array. This is a cartesian product, which can be surprising.
+
+#### Example 
+
+```
+echo '[{"name":"JSON", "good":true}, {"name":"XML", "good":false}]' | jq '.[] | .name'
+```
+The above example:
+
+Input : [{"name":"JSON", "good":true}, {"name":"XML", "good":false}]
+
+Process: has 1 pipes means have 2 stage 
+
+stage 1 (.[])
+1. get root
+2. get root all objects
+
+stage 2 (.name) input .[] all object one by one 
+1. get value of key with name 
+
+Output: "JSON"
+        "XML"
+
+### Parenthesis <mark>()</mark>
+Parenthesis work as a grouping operator just as in any typical programming language.
+
+```
+echo '1'|jq '(. + 2) * 5'
+```
+
+the above example:
+
+Input : 1
+
+process: 
+1. get root object (1)
+2. (1+2)
+3. multiple 5
+
+output :
+15
