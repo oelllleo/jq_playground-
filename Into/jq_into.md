@@ -1,12 +1,59 @@
 # Intro 
-It mention the basic usage on Jq
 
-1. Display the JSON 
+JQ is a filter: 
+1. it takes ***input, 
+2. processs and 
+3. output 
+
+Foundamental concepts
+1. How jq works 
+2. Basic filters
+3. Object identifier-index and Optional Object Identifier-index
+4. Object Index and Array Index
+5. Array/String Slice and Array/Object Value Iterator
+6. Comma, Pipe and parenthesis 
 
 
-## Display the json 
+## How jq wroks
+jq filters run on <mark1>a stream of JSON data.</mark>
 
-The example.json is below 
+The input to jq is parsed as ***a sequence of whitespace-separated JSON values*** which are passed through the provided filter one at a time
+
+The output(s) of the filter are ***written to standard output, as a sequence of newline-separated JSON data.***
+
+## Basic filters
+
+### Identity: <mark>***.***</mark>
+
+The simplest and most common filter (or jq program) is <mark>.</mark>, which is the ***identity operator***, <mark>copying the inputs of the jq processor to the output stream. </mark>
+
+Because the default behavior of the jq processor is to read JSON texts from the input stream, and to pretty-print outputs, the . program's main use is to validate and pretty-print the inputs.
+
+
+but sometime the jq will losing precision 
+
+```
+1E1234567890 | . 
+
+(return 1.7976931348623157e+308  jq has converted it to an IEEE754 double-precision representation, losing precision. on parsing this number)
+```
+
+the parsing procedures:
+
+(1) Any arithmetic operation on a number that has not already been converted to an IEEE754 double precision representation will trigger a conversion to the IEEE754 representation.
+
+(2) jq will attempt to maintain the original decimal precision of number literals, but in expressions such 1E1234567890, precision will be lost if the exponent is too large.
+
+(3) In jq programs, a leading minus sign will trigger the conversion of the number to an IEEE754 representation.
+
+(4) Comparisons are carried out using the untruncated big decimal representation of numbers if available, as illustrated in one of the following examples.
+
+#### Identity example 
+
+```
+ echo '"Hello, world!"' | jq '.'
+```
+
 ```
 {
   "id": 5101141,
