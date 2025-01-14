@@ -1,0 +1,20 @@
+# Array Constructor 
+
+## basic creation 
+
+you can create by this 
+
+```
+cat empty.json | jq '1,2' > create.json
+```
+
+and for array 
+```
+cat empty.json | jq '[1,2]' > create1.json
+```
+
+combine with the index and array 
+
+```
+cat example.json | jq '[.[].state]' > create2.json
+```

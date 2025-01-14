@@ -1,0 +1,103 @@
+# Object Identifier Index
+
+basically Jq cheat json = JS object 
+so.....
+```
+jq '.key.subkey.subsubley'
+```
+
+# array 
+
+the example.json is 5 element arrays
+
+if I just want last element 
+
+```
+cat example.json | jq '.[4]'
+```
+
+so that 
+
+```
+echo "[1,2,3,4,5]" | jq '.[2:4]'
+```
+
+it returns 
+
+```
+[
+    3,
+    4
+]
+```
+
+***last element is not included***
+
+
+if return to the end 
+```
+echo "[1,2,3,4,5]" | jq '.[2:]'
+```
+it returns
+```
+[
+  3,
+  4,
+  5
+]
+```
+also it supports negative 
+
+```
+echo "[1,2,3,4,5]" | jq '.[:-2]'
+```
+returns 
+```
+[
+  1,
+  2,
+  3
+]
+```
+
+```
+echo "[1,2,3,4,5]" | jq '.[-2:]'
+```
+it return 
+
+```
+[
+  4,
+  5
+]
+```
+
+mix and match, it can mix with indexing 
+```
+cat example.json | jq '.[4].state'
+```
+
+it returns
+```
+"open"
+```
+
+And if we want to get all the state
+```
+cat example.json | jq '.[].state'
+```
+
+it returns
+```
+"open"
+"open"
+"open"
+"open"
+"open"
+```
+
+unwrap it 
+```
+cat example.json | jq -r '.[].state'
+```
+
