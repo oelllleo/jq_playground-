@@ -3,7 +3,7 @@
 
 
 1. Intro (Invoking jq & basic filters)
-2. Objects, operators and functions
+2. Construction , operators and functions
 3. Conditionals and comparsions
 4. Regular Expressions 
 5. Advanced features
